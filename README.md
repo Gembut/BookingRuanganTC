@@ -10,7 +10,7 @@ Aplikasi Android modern berbasis **Jetpack Compose** untuk mempermudah proses pe
 | Kategori | Link |
 |---|---|
 | **Aplikasi** | [📥 Download APK](https://github.com/Gembut/BookingRuanganTC/raw/main/TCRoom.apk) |
-| **Video Presentasi** | [🎬 Tonton di YouTube](https://youtu.be/JdhOSJ21Jps) |
+| **Video Presentasi** | <a href="https://youtu.be/JdhOSJ21Jps" target="_blank">🎬 Tonton di YouTube</a> |
 | **Presentasi (PDF)** | [📊 Download PPT](https://github.com/Gembut/BookingRuanganTC/raw/main/Presentasi%20ETS%20PPB_5025231152_5025231297.pdf) |
 
 > **Catatan:** Untuk menginstal APK, pastikan Anda telah mengizinkan "Install from Unknown Sources" di pengaturan HP Anda.
