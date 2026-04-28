@@ -20,6 +20,9 @@ Aplikasi ini menyediakan antarmuka yang intuitif untuk mengelola peminjaman fasi
 | <img width="300" height="650" alt="Screenshot 2026-04-28 170625" src="https://github.com/user-attachments/assets/e1cbcabb-5ff2-4b4a-b614-c7b51e9c46c6" /> | <img width="300" height="650" alt="Screenshot 2026-04-28 170720" src="https://github.com/user-attachments/assets/bdde381f-20f4-4e67-a64a-4fd8becc465b" /> | 
 | <img width="300" height="650" alt="Screenshot 2026-04-28 170653" src="https://github.com/user-attachments/assets/c4a2affe-32d7-43d0-8f9c-9137b252514d" /> | <img width="300" height="650" alt="Screenshot 2026-04-28 170814" src="https://github.com/user-attachments/assets/fef86105-8c08-4443-afe8-c8f32a0af160" /> |
 
+## PPT - Deskripsi, Desain, Cara Mengerjakan
+File presentasi dapat anda akses di [Sini](https://github.com/Gembut/BookingRuanganTC/blob/main/Presentasi%20ETS%20PPB_5025231152_5025231297.pdf) (refresh halaman jika file presentasi gagal dimuat)
+
 ## 🚀 Cara Mengerjakan & Menjalankan
 
 ### Prasyarat
