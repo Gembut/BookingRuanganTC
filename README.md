@@ -2,6 +2,13 @@
 
 Aplikasi Android modern berbasis **Jetpack Compose** untuk mempermudah proses pemesanan ruangan di Departemen Teknik Informatika (TC). Aplikasi ini dirancang untuk membantu mahasiswa maupun dosen dalam mengecek ketersediaan fasilitas dan melakukan reservasi secara digital.
 
+## 📲 Download & Instalasi
+| Version | Link |
+|---|---|
+| **TCRoom - Latest Release** | [📥 Download APK](https://github.com/Gembut/BookingRuanganTC/raw/main/TCRoom.apk) |
+
+> **Catatan:** Untuk menginstal APK, pastikan Anda telah mengizinkan "Install from Unknown Sources" di pengaturan HP Anda.
+
 ## 📄 Deskripsi & Fitur
 Aplikasi ini menyediakan antarmuka yang intuitif untuk mengelola peminjaman fasilitas akademik. 
 
@@ -10,7 +17,7 @@ Aplikasi ini menyediakan antarmuka yang intuitif untuk mengelola peminjaman fasi
 *   **Formulir Pemesanan Digital:** Input data peminjam (Nama & NRP/NIP) serta keperluan acara.
 *   **Penjadwalan Presisi:** Integrasi *Date Picker* dan *Time Wheel Picker* untuk menentukan waktu pemakaian yang akurat.
 *   **Konfirmasi Reservasi:** Ringkasan detail pemesanan setelah formulir berhasil dikirim.
-*   **UI Modern:** Menggunakan Material Design 3 dengan tema warna biru yang profesional dan bersih.
+*   **UI Modern & Dark Mode:** Menggunakan Material Design 3 dengan dukungan tema gelap otomatis untuk kenyamanan mata.
 
 ## 🖼️ Infografis Aplikasi
 | | |
@@ -21,38 +28,24 @@ Aplikasi ini menyediakan antarmuka yang intuitif untuk mengelola peminjaman fasi
 | <img width="300" height="650" alt="Screenshot 2026-04-28 170653" src="https://github.com/user-attachments/assets/c4a2affe-32d7-43d0-8f9c-9137b252514d" /> | <img width="300" height="650" alt="Screenshot 2026-04-28 170814" src="https://github.com/user-attachments/assets/fef86105-8c08-4443-afe8-c8f32a0af160" /> |
 
 ## PPT - Deskripsi, Desain, Cara Mengerjakan
-File presentasi dapat anda akses di [Sini](https://github.com/Gembut/BookingRuanganTC/blob/main/Presentasi%20ETS%20PPB_5025231152_5025231297.pdf) (refresh halaman jika file presentasi gagal dimuat)
+File presentasi dapat anda akses di [Sini](https://github.com/Gembut/BookingRuanganTC/blob/main/Presentasi%20ETS%20PPB_5025231152_5025231297.pdf)
 
 ## 🚀 Cara Mengerjakan & Menjalankan
 
 ### Prasyarat
-*   **Android Studio** (versi Ladybug atau yang terbaru direkomendasikan).
-*   **JDK 17** atau yang lebih baru.
-*   Perangkat Android (Physical Device) atau Emulator dengan **API Level 24+**.
+*   **Android Studio** (versi Ladybug atau yang terbaru).
+*   **JDK 17**.
+*   Perangkat Android (API Level 24+).
 
 ### Langkah-langkah
-1.  **Clone Repositori:**
-    ```bash
-    git clone https://github.com/username/BookingRuanganTC.git
-    ```
-2.  **Buka di Android Studio:**
-    Pilih menu `File > Open` dan arahkan ke folder proyek ini.
-3.  **Sync Gradle:**
-    Tunggu hingga proses *Gradle Sync* selesai. Pastikan koneksi internet stabil untuk mengunduh dependensi.
-4.  **Jalankan:**
-    Klik tombol **Run** (ikon play hijau) di toolbar atas Android Studio.
+1.  **Clone Repositori:** `git clone https://github.com/Gembut/BookingRuanganTC.git`
+2.  **Buka di Android Studio.**
+3.  **Sync Gradle** dan jalankan aplikasi.
 
 ## 🛠️ Penjelasan Kode
-Struktur kode aplikasi ini berfokus pada kesederhanaan dan keterbacaan menggunakan Jetpack Compose dalam satu file utama (`MainActivity.kt`):
-
-1.  **Data Model (`Room`):**
-    Class data yang menyimpan atribut ruangan seperti `name`, `capacity`, `location`, dan `facilities`.
-2.  **State Management:**
-    Menggunakan `remember` dan `mutableStateOf` untuk mengatur navigasi antar layar (Layar Daftar -> Layar Form -> Layar Konfirmasi) tanpa perlu fragment manual.
-3.  **Komponen Utama (Composables):**
-    *   `RoomListScreen`: Menggunakan `LazyColumn` untuk merender daftar ruangan secara efisien.
-    *   `BookingFormScreen`: Mengelola input pengguna dan validasi form sederhana (`isValid`).
-    *   `TimeWheelInput`: Implementasi kustom menggunakan `AndroidView` untuk memanggil `NumberPicker` klasik di dalam lingkungan Compose.
-    *   `ConfirmationScreen`: Layar akhir yang menampilkan status keberhasilan pemesanan.
-4.  **UI Styling:**
-    Memanfaatkan `Card`, `Brush` untuk gradient, dan `Shape` untuk memberikan tampilan modern pada setiap elemen kartu ruangan.
+Struktur kode aplikasi ini berfokus pada kesederhanaan menggunakan Jetpack Compose dalam `MainActivity.kt`:
+1.  **Data Model (`Room`):** Atribut ruangan lengkap.
+2.  **State Management:** Navigasi antar layar reaktif.
+3.  **Animasi:** Transisi `AnimatedContent` untuk UI yang *smooth*.
+4.  **Validasi:** Blokir tanggal masa lalu dan validasi input form.
+5.  **Dark Mode:** Dukungan tema gelap otomatis.
