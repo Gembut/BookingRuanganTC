@@ -37,6 +37,7 @@ File presentasi dapat anda akses di [Sini](https://github.com/Gembut/BookingRuan
 *   **JDK 17**.
 *   Perangkat Android (API Level 24+).
 
+Anda dapat langsung mendownload aplikasi melalui [link ini](https://github.com/Gembut/BookingRuanganTC/raw/main/TCRoom.apk) atau clone repository ini dengan cara:
 ### Langkah-langkah
 1.  **Clone Repositori:** `git clone https://github.com/Gembut/BookingRuanganTC.git`
 2.  **Buka di Android Studio.**
